@@ -3,6 +3,7 @@ baseURL = "https://AntoineWHR.github.io/mon-blog-final/" # <--- VÉRIFIE BIEN CE
 languageCode = "fr-fr" # Ou "en-us", etc.
 title = "Mon Blog Final - CyberSec" # <--- METS LE TITRE DE TON SITE
 theme = "LoveIt"
+mainSections = ["posts"]
 # Thème par défaut (évite le flash au chargement)
 defaultContentLanguage = "fr" # Mets le code de ta langue principale
 hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
