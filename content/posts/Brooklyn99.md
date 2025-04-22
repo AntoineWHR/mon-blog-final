@@ -5,6 +5,7 @@ draft: false                     # <--- TRÈS IMPORTANT : 'false' pour publier
 author: "AntoineWHR"             # <--- Ton nom/pseudo (optionnel, si défini globalement)
 tags: ["TryHackMe", "CTF", "Linux", "FTP", "SSH", "Sudo", "Less"] # <--- Des tags pertinents
 categories: ["WriteUps"]         # <--- Une catégorie (ex: WriteUps)
+comment: true
 description: "Solution pas à pas du challenge TryHackMe Brooklyn Nine-Nine, de la reconnaissance à l'accès root." # <--- Description courte
 ---
 
