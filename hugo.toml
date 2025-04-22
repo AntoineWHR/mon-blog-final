@@ -23,13 +23,13 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
   [params.author]
     name = "AntoineWHR" # <--- METS TON NOM/PSEUDO
 
-  # Configuration de l'en-tête
+  # Configuration de l'en-tête (barre de navigation principale)
   [params.header]
     desktopMode = "fixed" # Comportement du header sur PC
     mobileMode = "auto" # Comportement du header sur mobile
     [params.header.title]
-      logo = "/images/who.png" # Chemin vers ton logo si tu en as un (dans /static/images/)
-      name = "Antoine Garcia - WheelRoot" # Texte affiché dans l'en-tête <--- METS LE TEXTE VOULU
+      # logo = "/images/who.png" # Commenté : Ce n'est PAS l'avatar du profil
+      name = "Antoine Garcia - WheelRoot" # Texte affiché dans l'en-tête
       pre = "" # Texte/icône avant le nom
       post = "" # Texte/icône après le nom
 
@@ -39,34 +39,49 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     hugo = true # Affiche "Powered by Hugo"
     copyright = true # Affiche © Année Auteur
     author = true # Affiche l'auteur
-    since = 2024 # Année de création du site <--- METS L'ANNEE ACTUELLE
+    since = 2024 # Année de création du site
 
   # Configuration du mode sombre/clair
   [params.theme]
     defaultTheme = "auto" # 'auto', 'light', 'dark'
     # themeColor = "#Classy" # Schéma de couleurs LoveIt (voir doc)
 
-  # Liens sociaux (ajoute ceux que tu veux)
+  # Liens sociaux (affichés sous le profil si social = true ci-dessous)
   [params.social]
     GitHub = "AntoineWHR" # <--- METS TON PSEUDO GITHUB
     # Linkedin = "tonprofil"
     # Twitter = "tonpseudo"
     # Email = "contact@example.com"
 
-  # Autres paramètres utiles pour LoveIt
-[params.page.toc]  # Définit 'toc' comme une table (objet)
-  enable = true      # Met la clé 'enable' à true à l'intérieur de cette table
-  # Tu pourras ajouter d'autres options ToC ici plus tard si besoin
-  # keepStatic = false
-  # auto = true
+  # --- Section Profil de la Page d'Accueil --- <<< AJOUT/MODIFICATION ICI
+  [params.home]
+    [params.home.profile]
+      enable = true       # <<< Active le bloc profil
+      gravatarEmail = ""  # <<< Laisse vide pour utiliser l'avatar local
+      avatar = "/images/who.png" # <<< CHEMIN vers ton avatar (depuis la racine du site)
+      title = "AntoineWHR" # <<< Le nom/pseudo à afficher DANS LE BLOC PROFIL
+      subtitle = "Explorateur du Cyberespace | Write-ups , projets, CTF" # <<< Le texte qui tape
+      typeit = true       # <<< Active l'effet "machine à écrire"
+      social = true       # <<< Affiche les liens sociaux (configurés dans [params.social])
+
+  # --- Paramètres des pages (articles, etc.) --- <<< CORRECTION DE STRUCTURE ICI
+  [params.page] # 'toc' doit être dans 'page'
+    [params.page.toc]  # Définit 'toc' comme une table (objet)
+      enable = true      # Active la Table des Matières par défaut
+      # keepStatic = false
+      # auto = true
+    [params.page.code]
+        # maxShownLines = 10
+    [params.page.comment]
+        enable = false
 
 # --- MENUS ---
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "Articles" # Texte du lien
-    url = "/posts/" # Chemin vers la liste des articles
-    weight = 10 # Ordre d'affichage
+    name = "Articles"
+    url = "/posts/"
+    weight = 10
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
@@ -77,14 +92,13 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     name = "Catégories"
     url = "/categories/"
     weight = 30
-  # Décommente quand tu auras une page "À Propos"
   # [[menu.main]]
   #   identifier = "about"
   #   name = "À Propos"
   #   url = "/about/"
   #   weight = 40
 
-# --- Nécessaire pour certaines fonctionnalités (Recherche LoveIt, etc.) ---
+# --- OUTPUTS ---
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
@@ -92,20 +106,19 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
 
-# --- Configuration du Markdown ---
+# --- MARKUP ---
 [markup]
   [markup.highlight]
-    # Style de coloration syntaxique (voir doc Hugo)
     # style = "dracula"
-    noClasses = false # Important pour LoveIt
+    noClasses = false
   [markup.goldmark.renderer]
-    unsafe = true # Permet le HTML dans le Markdown (utile parfois)
+    unsafe = true
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4
 
-# --- Taxonomies (Tags, Catégories) ---
+# --- TAXONOMIES ---
 [taxonomies]
   category = "categories"
   tag = "tags"
-  # series = "series" # Si tu veux regrouper des articles en séries
+  # series = "series"
