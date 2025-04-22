@@ -7,7 +7,6 @@ tags: ["TryHackMe", "CTF", "Linux", "FTP", "SSH", "Sudo", "Less"] # <--- Des tag
 categories: ["WriteUps"]         # <--- Une catégorie (ex: WriteUps)
 description: "Solution pas à pas du challenge TryHackMe Brooklyn Nine-Nine, de la reconnaissance à l'accès root." # <--- Description courte
 ---
----
 
 # **Write-up : TryHackMe - Brooklyn Nine-Nine**
 
