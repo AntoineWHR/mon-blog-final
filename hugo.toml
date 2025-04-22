@@ -79,17 +79,17 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
       # Configuration spécifique Giscus
       [params.page.comment.giscus]
         # --- METS TES VALEURS GISCUS OBTENUES PRÉCÉDEMMENT ICI ---
-        repo = "AntoineWHR/mon-blog-final"  # Ton repo
-        repoId = "R_kgDOOeA9yA"             # Ton Repo ID
-        category = "General"               # Ta catégorie de discussion
-        categoryId = "DIC_kwDOOeA9yM4CpW9r"       # Ton Category ID
-        mapping = "pathname"               # Méthode de mapping
-        strict = "0"                       # Strict (0 ou 1)
-        reactionsEnabled = "1"             # Activer les réactions (likes/etc)
-        emitMetadata = "0"                 # Emit metadata (0 ou 1)
-        inputPosition = "top"              # Position ('top' ou 'bottom')
-        theme = "dark"                     # Thème Giscus ('light', 'dark', 'preferred_color_scheme', etc.)
-        lang = "fr"                        # Langue de l'interface Giscus
+        data-repo="AntoineWHR/mon-blog-final"
+        data-repo-id="R_kgDOOeA9yA"
+        data-category="General"
+        data-category-id="DIC_kwDOOeA9yM4CpW9r"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="fr"
         loading = "lazy"                   # Chargement ('lazy' recommandé)
     # --- FIN DE LA SECTION COMMENTAIRES ---
 
