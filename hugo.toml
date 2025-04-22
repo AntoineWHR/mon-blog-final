@@ -54,12 +54,11 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     # Email = "contact@example.com"
 
   # Autres paramètres utiles pour LoveIt
-  [params.page]
-    toc = true # Activer la table des matières par défaut sur les articles
-    [params.page.code]
-        # maxShownLines = 10 # Limite lignes affichées par défaut bloc code
-    [params.page.comment]
-        enable = false # Désactiver les commentaires par défaut
+[params.page.toc]  # Définit 'toc' comme une table (objet)
+  enable = true      # Met la clé 'enable' à true à l'intérieur de cette table
+  # Tu pourras ajouter d'autres options ToC ici plus tard si besoin
+  # keepStatic = false
+  # auto = true
 
 # --- MENUS ---
 [menu]
