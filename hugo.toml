@@ -53,27 +53,45 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     # Twitter = "tonpseudo"
     # Email = "contact@example.com"
 
-  # --- Section Profil de la Page d'Accueil --- <<< AJOUT/MODIFICATION ICI
+  # --- Section Profil de la Page d'Accueil ---
   [params.home]
     [params.home.profile]
-      enable = true       # <<< Active le bloc profil
-      gravatarEmail = ""  # <<< Laisse vide pour utiliser l'avatar local
-      avatarURL = "images/who.png" # <<< CHEMIN vers ton avatar (depuis la racine du site)
-      title = "AntoineWHR" # <<< Le nom/pseudo à afficher DANS LE BLOC PROFIL
-      subtitle = "Explorateur du Cyberespace | Write-ups, Projets, CTF" # <<< Le texte qui tape
-      typeit = true       # <<< Active l'effet "machine à écrire"
-      social = true       # <<< Affiche les liens sociaux (configurés dans [params.social])
+      enable = true       # Active le bloc profil
+      gravatarEmail = ""  # Laisse vide pour utiliser l'avatar local
+      avatarURL = "/images/who.png" # CHEMIN vers ton avatar
+      title = "AntoineWHR" # Le nom/pseudo à afficher DANS LE BLOC PROFIL
+      subtitle = "Explorateur du Cyberespace | Write-ups, Projets, CTF" # Le texte qui tape
+      typeit = true       # Active l'effet "machine à écrire"
+      social = true       # Affiche les liens sociaux
 
-  # --- Paramètres des pages (articles, etc.) --- <<< CORRECTION DE STRUCTURE ICI
-  [params.page] # 'toc' doit être dans 'page'
-    [params.page.toc]  # Définit 'toc' comme une table (objet)
-      enable = true      # Active la Table des Matières par défaut
-      # keepStatic = false
-      # auto = true
+  # --- Paramètres des pages (articles, etc.) ---
+  [params.page]
+    [params.page.toc]  # Table des Matières
+      enable = true
     [params.page.code]
-        # maxShownLines = 10
+      # maxShownLines = 10
+    
+    # --- Section Commentaires (AVEC GISCUS) --- <<< MODIFIÉ/AJOUTÉ ICI
     [params.page.comment]
-        enable = false
+      enable = true          # Active les commentaires globalement
+      provider = "giscus"    # Indique à LoveIt d'utiliser Giscus
+
+      # Configuration spécifique Giscus
+      [params.page.comment.giscus]
+        # --- METS TES VALEURS GISCUS OBTENUES PRÉCÉDEMMENT ICI ---
+        repo = "AntoineWHR/mon-blog-final"  # Ton repo
+        repoId = "R_kgDOOeA9yA"             # Ton Repo ID
+        category = "General"               # Ta catégorie de discussion
+        categoryId = "DIC_kwDOOeA9yM4CpW9r"       # Ton Category ID
+        mapping = "pathname"               # Méthode de mapping
+        strict = "0"                       # Strict (0 ou 1)
+        reactionsEnabled = "1"             # Activer les réactions (likes/etc)
+        emitMetadata = "0"                 # Emit metadata (0 ou 1)
+        inputPosition = "top"              # Position ('top' ou 'bottom')
+        theme = "dark"                     # Thème Giscus ('light', 'dark', 'preferred_color_scheme', etc.)
+        lang = "fr"                        # Langue de l'interface Giscus
+        loading = "lazy"                   # Chargement ('lazy' recommandé)
+    # --- FIN DE LA SECTION COMMENTAIRES ---
 
 # --- MENUS ---
 [menu]
