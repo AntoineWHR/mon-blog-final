@@ -58,7 +58,7 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     [params.home.profile]
       enable = true       # <<< Active le bloc profil
       gravatarEmail = ""  # <<< Laisse vide pour utiliser l'avatar local
-      avatarURL = "/images/who.png" # <<< CHEMIN vers ton avatar (depuis la racine du site)
+      avatarURL = "images/who.png" # <<< CHEMIN vers ton avatar (depuis la racine du site)
       title = "AntoineWHR" # <<< Le nom/pseudo à afficher DANS LE BLOC PROFIL
       subtitle = "Explorateur du Cyberespace | Write-ups, Projets, CTF" # <<< Le texte qui tape
       typeit = true       # <<< Active l'effet "machine à écrire"
