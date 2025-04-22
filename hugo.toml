@@ -28,7 +28,7 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     desktopMode = "fixed" # Comportement du header sur PC
     mobileMode = "auto" # Comportement du header sur mobile
     [params.header.title]
-      # logo = "/images/logo.png" # Chemin vers ton logo si tu en as un (dans /static/images/)
+      logo = "/static/images/who.png" # Chemin vers ton logo si tu en as un (dans /static/images/)
       name = "Antoine Garcia - WheelRoot" # Texte affiché dans l'en-tête <--- METS LE TEXTE VOULU
       pre = "" # Texte/icône avant le nom
       post = "" # Texte/icône après le nom
