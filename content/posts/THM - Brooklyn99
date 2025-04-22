@@ -1,6 +1,6 @@
 ---
 title: "Write-up : TryHackMe - Brooklyn Nine-Nine"
-date: 2025-04-22T10:00:00+02:00  # <--- DATE CORRIGÉE (22 Avril 2025) + Heure (CEST probable)
+date: 2025-04-22T09:00:00+02:00 # Met l'heure à 9h du matin, bien avant 23h50
 draft: false                     # <--- TRÈS IMPORTANT : 'false' pour publier
 author: "AntoineWHR"             # <--- Ton nom/pseudo (optionnel, si défini globalement)
 tags: ["TryHackMe", "CTF", "Linux", "FTP", "SSH", "Sudo", "Less"] # <--- Des tags pertinents
