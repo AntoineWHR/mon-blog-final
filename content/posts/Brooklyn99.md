@@ -37,7 +37,7 @@ Comme toujours, commençons par un scan Nmap pour identifier les services expos�
 # -sV: Tente de déterminer la version des services
 ```
 
-![Résultats Nmap](/images/nmap1.png)
+![Résultats Nmap](/static/images/nmap1.png)
 
 Le scan révèle trois ports ouverts principaux :
 
