@@ -1,7 +1,7 @@
 # --- CONFIGURATION DE BASE REQUISE ---
 baseURL = "https://antoinegarcia.fr/" # <--- VÉRIFIE BIEN CETTE URL !
 languageCode = "fr-fr" # Ou "en-us", etc.
-title = "Antoine Garcia - WheelRoot" # <--- METS LE TITRE DE TON SITE
+title = "Antoine Garcia" # <--- METS LE TITRE DE TON SITE
 theme = "LoveIt"
 mainSections = ["posts"]
 # Thème par défaut (évite le flash au chargement)
@@ -29,7 +29,7 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     mobileMode = "auto" # Comportement du header sur mobile
     [params.header.title]
       # logo = "/images/who.png" # Commenté : Ce n'est PAS l'avatar du profil
-      name = "Antoine Garcia - WheelRoot" # Texte affiché dans l'en-tête
+      name = "Antoine Garcia" # Texte affiché dans l'en-tête
       pre = "" # Texte/icône avant le nom
       post = "" # Texte/icône après le nom
 
@@ -59,7 +59,7 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
       enable = true       # Active le bloc profil
       gravatarEmail = ""  # Laisse vide pour utiliser l'avatar local
       avatarURL = "images/who.png" # CHEMIN vers ton avatar
-      title = "AntoineWHR" # Le nom/pseudo à afficher DANS LE BLOC PROFIL
+      title = "Antoine Garcia - WheelRoot" # Le nom/pseudo à afficher DANS LE BLOC PROFIL
       subtitle = "Explorateur du Cyberespace | Write-ups, Projets, CTF" # Le texte qui tape
       typeit = true       # Active l'effet "machine à écrire"
       social = true       # Affiche les liens sociaux
