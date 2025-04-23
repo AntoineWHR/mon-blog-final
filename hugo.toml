@@ -1,5 +1,5 @@
 # --- CONFIGURATION DE BASE REQUISE ---
-baseURL = "https://AntoineWHR.github.io/mon-blog-final/" # <--- VÉRIFIE BIEN CETTE URL !
+baseURL = "https://antoinegarcia.fr/" # <--- VÉRIFIE BIEN CETTE URL !
 languageCode = "fr-fr" # Ou "en-us", etc.
 title = "Antoine Garcia - WheelRoot" # <--- METS LE TITRE DE TON SITE
 theme = "LoveIt"
