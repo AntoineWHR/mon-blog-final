@@ -8,6 +8,9 @@ categories: ["WriteUps"]
 comment:
   enable: true
 description: "Solution pas à pas du challenge TryHackMe Brooklyn Nine-Nine, de la reconnaissance à l'accès root."
+image:
+  src: /images/bkrl99.png 
+  alt: "Bannière pour le write-up Brooklyn Nine-Nine"
 ---
 
 <!--more-->
