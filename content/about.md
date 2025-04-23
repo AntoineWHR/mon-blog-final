@@ -1,21 +1,35 @@
 ---
-title: "À Propos de Moi"
-date: 2025-04-23T12:00:00+02:00  # <--- Mets une date/heure actuelle ou passée
+title: "À Propos de Moi - Antoine Garcia (WheelRoot)"
+date: 2025-04-23T12:00:00+02:00  # Ajuste si nécessaire
 draft: false
-comment: false # Désactive les commentaires pour cette page
+comment: false
 ---
 
 ## Qui suis-je ?
 
-Je suis Antoine Garcia (alias AntoineWHR), passionné par la cybersécurité. Sur ce blog, je partage mes explorations, write-ups de CTF et réflexions sur le domaine.
+Salut ! Je suis Antoine Garcia, alias **WheelRoot** en ligne. Actuellement en première année d'études en **cybersécurité**, passionné par tout ce qui touche à la sécurité informatique, à la défense et à la compréhension des systèmes qui nous entourent.
 
-## Mon Profil TryHackMe
+Ce blog est mon carnet de bord. C'est ici que je documente mon parcours d'apprentissage, que je partage mes **write-ups** CTF sur des plateformes comme TryHackMe et Hack The Box, et que je présente les **projets personnels** que je réalise au fil de mes études.
 
-Voici mon badge dynamique TryHackMe qui montre mes progrès :
+## Suivez mes Aventures
 
-<!-- Intégration de l'iframe THM -->
+Je suis actif sur plusieurs plateformes où je mets mes compétences à l'épreuve :
+
+### TryHackMe
+
+Voici un aperçu de mon activité sur TryHackMe, une excellente plateforme pour apprendre par la pratique :
+
 <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3553382" style='border:none; width: 350px; height: 180px;'></iframe>
 
-Vous pouvez aussi visiter mon profil complet [sur le site TryHackMe](https://tryhackme.com/p/AntoineWHR). <!-- <--- Vérifie si "AntoineWHR" est bien ton pseudo public THM pour ce lien -->
+Visitez mon profil complet : [**AntoineWHR sur TryHackMe**](https://tryhackme.com/p/wheelr00t)
 
-*(Tu pourras ajouter ton badge Hack The Box ici plus tard si tu le souhaites)*
+### Hack The Box
+
+Je relève également des défis sur Hack The Box, une plateforme plus axée sur des scénarios réalistes :
+
+Rendez-vous sur mon profil : [**WheelRoot sur Hack The Box**](https://app.hackthebox.com/profile/2093779)
+*(Badge HTB à ajouter ici quand disponible/souhaité)*
+
+---
+
+N'hésitez pas à explorer le site pour découvrir mes derniers **projets** et **write-ups** ! Vous pouvez également me retrouver sur [GitHub](https://github.com/AntoineWHR) (où ce site est hébergé !).
