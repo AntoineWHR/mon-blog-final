@@ -57,7 +57,7 @@ ftp -p <IP_SERVEUR> <PORT>
 
 Une fois connecté, on liste les fichiers et on trouve la note : `note_to_jake.txt`. Téléchargeons-la (`get note_to_jake.txt`) et examinons son contenu (`cat note_to_jake.txt`).
 
-![Note FTP](/images/ftp2.png)
+![Note FTP](/static/images/ftp2.png)
 
 La note mentionne que Jake a un mot de passe très faible. (ça lui ressemble bien) 
 C'est une information cruciale pour la suite !
@@ -88,7 +88,7 @@ Forts de l'indice trouvé dans la note FTP ("mot de passe très simple" pour l'u
 hydra -l jake -P /usr/share/wordlists/rockyou.txt ssh://<IP_SERVEUR>/ -f 
 ```
 
-![Résultat Hydra](/images/hydra3.png)
+![Résultat Hydra](/static/images/hydra3.png)
 
 Succès ! Hydra trouve rapidement le mot de passe : `987654321`.
 
@@ -108,7 +108,7 @@ ls /home/holt/
 cat /home/holt/user.txt
 ```
 
-![Flag User](/images/ssh4.png)
+![Flag User](/static/images/ssh4.png)
 
 
 **Flag Utilisateur Obtenu !**
@@ -169,7 +169,7 @@ root.txt
 # cat root.txt
 ```
 
-![GTFOBins - less](/images/root5.png) 
+![GTFOBins - less](/static/images/root5.png) 
 
 **Flag Root Obtenu ! Challenge Terminé !**
 
