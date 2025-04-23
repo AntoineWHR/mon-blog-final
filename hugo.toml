@@ -111,11 +111,11 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
     name = "Catégories"
     url = "/categories/"
     weight = 30
-  # [[menu.main]]
-  #   identifier = "about"
-  #   name = "À Propos"
-  #   url = "/about/"
-  #   weight = 40
+   [[menu.main]]
+     identifier = "about"
+     name = "À Propos"
+     url = "/about/"
+     weight = 40
 
 # --- OUTPUTS ---
 [outputs]
