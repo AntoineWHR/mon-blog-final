@@ -10,6 +10,8 @@ comment:
 description: "Solution pas à pas du challenge TryHackMe Brooklyn Nine-Nine, de la reconnaissance à l'accès root." # <--- Description courte
 ---
 
+<!--more-->  <--- AJOUTE ÇA ICI POUR COUPER LE RÉSUMÉ
+
 # **Write-up : TryHackMe - Brooklyn Nine-Nine**
 
 ## **Informations sur la Room**
@@ -35,7 +37,7 @@ Comme toujours, commençons par un scan Nmap pour identifier les services expos�
 # -sV: Tente de déterminer la version des services
 ```
 
-![Résultats Nmap](https://hackmd.io/_uploads/B1czksiRJl.png)
+![Résultats Nmap](images/nmap1.png)
 
 Le scan révèle trois ports ouverts principaux :
 
@@ -55,7 +57,7 @@ ftp -p <IP_SERVEUR> <PORT>
 
 Une fois connecté, on liste les fichiers et on trouve la note : `note_to_jake.txt`. Téléchargeons-la (`get note_to_jake.txt`) et examinons son contenu (`cat note_to_jake.txt`).
 
-![Note FTP](https://hackmd.io/_uploads/Hk33JjjA1g.png)
+![Note FTP](images/ftp2.png)
 
 La note mentionne que Jake a un mot de passe très faible. (ça lui ressemble bien) 
 C'est une information cruciale pour la suite !
@@ -86,7 +88,7 @@ Forts de l'indice trouvé dans la note FTP ("mot de passe très simple" pour l'u
 hydra -l jake -P /usr/share/wordlists/rockyou.txt ssh://<IP_SERVEUR>/ -f 
 ```
 
-![Résultat Hydra](https://hackmd.io/_uploads/B1FJbsi01l.png)
+![Résultat Hydra](images/hydra3.png)
 
 Succès ! Hydra trouve rapidement le mot de passe : `987654321`.
 
@@ -106,7 +108,7 @@ ls /home/holt/
 cat /home/holt/user.txt
 ```
 
-![Flag User](https://hackmd.io/_uploads/B1lM-Mos01x.png)
+![Flag User](images/ssh4.png)
 
 
 **Flag Utilisateur Obtenu !**
@@ -167,7 +169,7 @@ root.txt
 # cat root.txt
 ```
 
-![GTFOBins - less](https://hackmd.io/_uploads/HyfyHjoRJx.png) 
+![GTFOBins - less](images/root5.png) 
 
 **Flag Root Obtenu ! Challenge Terminé !**
 
