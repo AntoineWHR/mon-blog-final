@@ -8,7 +8,7 @@ categories: ["WriteUps"]
 comment:
   enable: true
 description: "Solution pas à pas du challenge TryHackMe Brooklyn Nine-Nine, de la reconnaissance à l'accès root."
-featuredImage: "/images/brkl99.png"
+featuredImage: "/images/bkrl99.png"
 ---
 
 <!--more-->
