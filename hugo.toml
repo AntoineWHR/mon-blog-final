@@ -89,7 +89,7 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
         reactionsEnabled = "1"             # Clé correcte: reactionsEnabled
         emitMetadata = "0"                 # Clé correcte: emitMetadata
         inputPosition = "top"              # Clé correcte: inputPosition
-        theme = "dark"                     # Clé correcte: theme
+        theme = "preferred_color_scheme"                     # Clé correcte: theme
         lang = "fr"                        # Clé correcte: lang
         loading = "lazy"                   # Clé correcte: loading
     # --- FIN DE LA SECTION COMMENTAIRES ---
