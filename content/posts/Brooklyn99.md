@@ -37,7 +37,7 @@ Comme toujours, commençons par un scan Nmap pour identifier les services expos�
 # -sV: Tente de déterminer la version des services
 ```
 
-![Résultats Nmap](../static/images/nmap1.png)
+![](/images/nmap1.png)
 
 Le scan révèle trois ports ouverts principaux :
 
@@ -57,7 +57,7 @@ ftp -p <IP_SERVEUR> <PORT>
 
 Une fois connecté, on liste les fichiers et on trouve la note : `note_to_jake.txt`. Téléchargeons-la (`get note_to_jake.txt`) et examinons son contenu (`cat note_to_jake.txt`).
 
-![Note FTP](static/images/ftp2.png)
+![](/images/ftp2.png)
 
 La note mentionne que Jake a un mot de passe très faible. (ça lui ressemble bien) 
 C'est une information cruciale pour la suite !
@@ -108,7 +108,7 @@ ls /home/holt/
 cat /home/holt/user.txt
 ```
 
-![Flag User](static/images/ssh4.png)
+![](/images/ssh4.png)
 
 
 **Flag Utilisateur Obtenu !**
@@ -169,7 +169,7 @@ root.txt
 # cat root.txt
 ```
 
-![GTFOBins - less](static/images/root5.png) 
+![](/images/root5.png) 
 
 **Flag Root Obtenu ! Challenge Terminé !**
 
