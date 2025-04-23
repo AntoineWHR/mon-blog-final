@@ -78,6 +78,7 @@ hasCJKLanguage = false # Met à 'true' si tu écris en Chinois/Japonais/Coréen
 
       # Configuration spécifique Giscus
       [params.page.comment.giscus]
+        enable = true
         # --- VALEURS AVEC LES BONNES CLÉS ---
         repo = "AntoineWHR/mon-blog-final"  # Clé correcte: repo
         repoId = "R_kgDOOeA9yA"             # Clé correcte: repoId
