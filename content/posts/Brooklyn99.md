@@ -5,7 +5,8 @@ draft: false
 author: "AntoineWHR"
 tags: ["TryHackMe", "CTF", "Linux", "FTP", "SSH", "Sudo", "Less"]
 categories: ["WriteUps"]
-comment: true
+comment:
+  enable: true
 description: "Solution pas à pas du challenge TryHackMe Brooklyn Nine-Nine, de la reconnaissance à l'accès root."
 ---
 
