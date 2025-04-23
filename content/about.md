@@ -21,7 +21,7 @@ Voici un aperçu de mon activité sur TryHackMe, une excellente plateforme pour 
 
 <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3553382" style='border:none; width: 350px; height: 180px;'></iframe>
 
-Visitez mon profil complet : [**AntoineWHR sur TryHackMe**](https://tryhackme.com/p/wheelr00t)
+Visitez mon profil complet : [**WheelRoot sur TryHackMe**](https://tryhackme.com/p/wheelr00t)
 
 ### Hack The Box
 
