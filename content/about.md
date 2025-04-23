@@ -28,7 +28,6 @@ Visitez mon profil complet : [**AntoineWHR sur TryHackMe**](https://tryhackme.co
 Je relève également des défis sur Hack The Box, une plateforme plus axée sur des scénarios réalistes :
 
 Rendez-vous sur mon profil : [**WheelRoot sur Hack The Box**](https://app.hackthebox.com/profile/2093779)
-*(Badge HTB à ajouter ici quand disponible/souhaité)*
 
 ---
 
