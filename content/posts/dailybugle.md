@@ -166,7 +166,7 @@ cd /var/www/html
 ls -la
 ```
 
-### **Découverte des Identifiants MySQL**
+### **Découverte des Identifiants SSH**
 
 Dans le fichier de configuration de Joomla (`configuration.php`), nous trouvons les identifiants de la base de données :
 
@@ -201,7 +201,7 @@ cat user.txt
 
 ### **Vérification des Privilèges Sudo**
 
-Première faite quand je suis sur une session :
+Première chose faite quand je suis sur une session :
 
 ```bash
 sudo -l
