@@ -17,7 +17,7 @@ Je suis actif sur plusieurs plateformes où je mets mes compétences à l'épreu
 
 ### TryHackMe
 
-Voici un aperçu de mon activité sur TryHackMe, une excellente plateforme pour apprendre par la pratique :
+Voici un aperçu de mon activité sur TryHackMe :
 
 <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3553382" style='border:none; width: 350px; height: 180px;'></iframe>
 
@@ -25,10 +25,10 @@ Visitez mon profil complet : [**WheelRoot sur TryHackMe**](https://tryhackme.com
 
 ### Hack The Box
 
-Je relève également des défis sur Hack The Box, une plateforme plus axée sur des scénarios réalistes :
+Je relève également des défis sur Hack The Box :
 
 Rendez-vous sur mon profil : [**WheelRoot sur Hack The Box**](https://app.hackthebox.com/profile/2093779)
 
 ---
 
-N'hésitez pas à explorer le site pour découvrir mes derniers **projets** et **write-ups** ! Vous pouvez également me retrouver sur [GitHub](https://github.com/AntoineWHR) (où ce site est hébergé !).
+N'hésitez pas à explorer le site pour découvrir mes derniers **projets** et **write-ups**.
