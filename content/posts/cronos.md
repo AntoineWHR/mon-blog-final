@@ -1,6 +1,6 @@
 ---
 title: "Write-up : Hack The Box - Cronos [MEDIUM]"
-date: 2025-06-08T14:00:00+02:00
+date: 2025-06-08T00:00:00+02:00
 draft: false
 author: "AntoineWHR"
 tags: ["HackTheBox", "CTF", "Linux", "SQLi", "Command Injection", "Crontab", "Privilege Escalation"]
