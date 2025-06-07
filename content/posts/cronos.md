@@ -1,5 +1,5 @@
 ---
-title: "Write-up : Hack The Box - Cronos [MEDIUM]"
+title: "Write-up : Hack The Box - Cronos"
 date: 2025-06-08T00:00:00+02:00
 draft: false
 author: "AntoineWHR"
