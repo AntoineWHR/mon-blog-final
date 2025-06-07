@@ -36,7 +36,7 @@ Commençons par identifier les services sur la machine cible avec un scan Nmap.
 nmap -sC -sV 10.129.227.211
 ```
 
-![NMAP](/images/imagescrnos/image-2.png)
+![NMAP](/images/imagescrnos/image-1.png)
 
 {{< admonition note "Résultats Clés du Scan Nmap" >}}
 Le scan révèle trois ports ouverts :
@@ -52,10 +52,11 @@ Le service HTTP sera notre cible principale, et la présence du DNS suggère des
 
 Le site principal ne révèle rien d'intéressant. Let's go énumérer les sous-domaines avec gobuster :
 
+![NMAP](/images/imagescrnos/image-2.png)
+
 ```bash
 gobuster vhost -u "cronos.htb" -w /usr/share/wfuzz/general/common.txt --append-domain
 ```
-
 
 
 {{< admonition tip "Découverte Cruciale - Sous-domaine Admin" >}}
