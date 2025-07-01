@@ -144,7 +144,7 @@ while($row = $res->fetch_assoc()) { print_r($row); }
 john --wordlist=rockyou.txt hash.hash
 ```
 
-![john](https://imgflip.com/i/9z19d7)
+![john](https://i.imgflip.com/9z19d7.jpg)
 
 {{< admonition success "Mot de Passe Cracké !" >}}
 Le hash de l'utilisateur **diego** est cracké : **sandiegocalifornia**
