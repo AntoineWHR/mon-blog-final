@@ -144,8 +144,6 @@ while($row = $res->fetch_assoc()) { print_r($row); }
 john --wordlist=rockyou.txt hash.hash
 ```
 
-![john](https://i.imgflip.com/9z19d7.jpg)
-
 {{< admonition success "Mot de Passe Cracké !" >}}
 Le hash de l'utilisateur **diego** est cracké : **sandiegocalifornia**
 
@@ -190,6 +188,8 @@ L'utilisateur `think` peut accéder à l'utilisateur `gege` sans mot de passe et
 ## **Phase 8 : Cracking de l'Archive & Escalade Finale**
 
 ### **Extraction du Hash de l'Archive**
+
+![john](https://i.imgflip.com/9z19d7.jpg)
 
 ```bash
 zip2john wordpress.old.zip > zip.hash
