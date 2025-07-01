@@ -151,6 +151,7 @@ Le hash de l'utilisateur **diego** est cracké : **sandiegocalifornia**
 
 Nous pouvons maintenant nous connecter en SSH !
 {{< /admonition >}}
+![wwwdata](https://i.imgflip.com/9z1dbn.jpg)
 
 ## **Phase 6 : Escalade de Privilèges - Utilisateur Diego**
 
