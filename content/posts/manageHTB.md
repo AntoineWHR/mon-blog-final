@@ -6,7 +6,7 @@ author: "AntoineWHR"
 tags: ["HTB", "Linux", "Java", "RMI", "JMX", "2FA", "Privilege Escalation"]
 categories: ["WriteUps"]
 comment:
-enable: true
+  enable: true
 description: "Exploitation complète de la machine Manage de Hack The Box, de l'énumération RMI/JMX à l'escalade de privilèges via sudo."
 ---
 
