@@ -1,5 +1,5 @@
 # --- CONFIGURATION DE BASE REQUISE ---
-baseURL = "https://antoinegarcia.fr/" # <--- VÉRIFIE BIEN CETTE URL !
+baseURL = "" # <--- VÉRIFIE BIEN CETTE URL !
 languageCode = "fr-fr" # Ou "en-us", etc.
 title = "Antoine Garcia" # <--- METS LE TITRE DE TON SITE
 theme = "LoveIt"
